@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.head {
+    text-align: center;
+}
+
+#team img {
+    margin-top: -50px;
+    width: 150px;
+    height: auto;
+    padding-top: 10px;
+    border-radius: 50%;
+}
+
+#team i {
+    font-size: 26px;
+    color: #555;
+}
+
+.icon {
+    margin: 10px auto;
+    justify-content: space-around;
+    display: flex;
+    max-width: 700px;
+}
+
+.icon a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    transition: 0.4s all;
+    cursor: pointer;
+    background: white;
+}
+
+.icon a:hover {
+    transform: scale(1.2);
+}
+
+#team p {
+    font-weight: 500;
+}
+
+.column {
+    width: 25%;
+    float: left;
+    padding: 100px 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+#team .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 40px;
+    padding-bottom: 15px;
+    box-shadow: 5px 5px 15px #e74c3c;
+    transition: all 0.3s ease-in
+}
+
+
+/* #team img {
+    width: 150px;
+    height: auto;
+    padding-top: 10px;
+} */
+
+#team .card:hover {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    box-shadow: 5px 5px 10px #9E9E9E;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+#team .card:hover h3,
+#team .card:hover {
+    color: #fff;
+}
+
+.title {
+    /* color: gray; */
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.6;
+}
